@@ -3,27 +3,138 @@
 <head>
     <meta charset="utf-8">
     <title>Задание 4</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&amp;subset=cyrillic" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700&amp;subset=cyrillic" rel="stylesheet">
+    <style>
+		body * {
+			font-family: 'Roboto', sans-serif;
+		}
+		h1, h2, h3 {
+			font-family: 'Roboto Condensed', sans-serif;
+		}
+		section {
+			max-width: 960px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		p {
+			font-size: 16px;
+		}
+		.anons {
+			font-size: 18px;
+		}
+		.if {
+			position:relative;
+			padding-bottom:56.25%;/*пропорции видео 16:9 */
+			padding-top:25px;
+			height:0;
+		}
+		.if iframe {
+			position:absolute;
+			top:0;
+			left:0;
+			width:100%;
+			height:100%;
+			width:100%;
+			height:100%;
+		}
+		a {
+			text-decoration: none;
+		}
+		a:visited {
+			color: grey;
+		}
+		a:hover {
+			color: red;
+		}
+		#top {
+			position: fixed;
+			right: 30px;
+			bottom: 30px;
+			font-weight: 600;
+			font-size: 20px;
+			opacity: 0.6;
+			color: #22e;
+		}
+		#top:hover {
+			opacity: 0.9;
+		}
+		nav {
+			margin-bottom: 50px;
+		}
+		span {
+			padding: 0px 20px;
+			border-left: 1px solid grey;
+			border-right: 1px solid grey;
+		}
+		article {
+			margin-bottom: 80px;
+		}
+		img {
+			width: 100%;
+		}
+		h1 {
+			font-size: 30px;
+		}
+		h2 {
+			font-size: 25px;
+		}
+		footer {
+			width: 100%;
+			text-align: center;
+			padding: 30px;
+			border-top: 1px solid grey;
+			margin-top: 120px;
+			margin-bottom: 20px;
+			color: #113;
+		}
+    </style>
 </head>
 <body>
-<h1>Сделать страничку с произвольным контентом и выполнить следующие задания:</h1>
-<ul>
-    <li> Подцепить шрифты Roboto и Roboto Condensed;</li>
-    <li> Заголовки должны быть Roboto Condensed, все остальное - Roboto;</li>
-    <li> Весь контент должен ограничиваться по ширине на 960px и быть по центру страницы;</li>
-    <li> Заголовок первого порядка - "Блог обо мне";</li>
-    <li> После заголовка первого порядка  Абцаз текста - анонс;</li>
-    <li> Меню с якорями на нижеследующие разделы (2, 3);</li>
-    <li> У каждого подраздела свой Подзаголовок;</li>
-    <li> После каждого Подзаголовка Абцаз текста - анонс но с меньшим кеглем;</li>
-    <li> После анонса в подразделе 2-3 абзаца просто текста;</li>
-    <li> Внутри одного раздела картинка с описанием на случай, если она не загрузится;</li>
-    <li> Внутри другого видео с youtube;</li>
-    <li> В конце страницы яндекс/гугл карта с меткой;</li>
-    <li> И видео, и карта должны быть на всю ширину контейнера и вне зависимости от размеров окна сохранять пропорции 16/9;</li>
-    <li> Внутри абзацев текста должны присутствовать слова повышенной важности, которые нужно соответствующие выделять,
-        также должны присутствовать слова, которые необходимо выделить интонационно;</li>
-    <li> Также внутри текста расставить ссылки (1-2), стилизовать под разные состояния;</li>
-    <li> Итого - 2 вида головков, 3 вида абзацев, выделения strong и em, ссылки, изображения, айфреймы с youtube, картой.</li>
-</ul>
+<section>
+	<a href="#0" id="top">наверх</a>
+	<a name="0"><h1>Блог обо мне</h1></a>
+	<p class="anons">
+		Анонс АНОНС АНОНС Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo sed architecto magnam odio nobis. In vero, sit maiores nulla ut quidem ipsum reprehenderit! Quidem quo in fugit aliquam saepe, voluptatem.
+	</p>
+	<nav>
+		<span><a href="#1">Раздел 1</a></span>
+		<span><a href="#2">Раздел 2</a></span>
+		<span><a href="#3">Раздел 3</a></span>
+	</nav>
+	<article>
+		<a name="1"><h2>Раздел 1</h2></a>
+		<p class="anons">Это анонс</p>
+		<p><strong>Lorem ipsum dolor sit amet</strong>, consectetur adipisicing <em>elit</em>. Accusamus asperiores, rem, ab, blanditiis assumenda sapiente nesciunt voluptate aperiam quas temporibus quia mollitia in, aut ipsa expedita soluta. Aliquid, magnam, neque!</p>
+		<p><a href="http:/vk.com" target="_blanc">Lorem ipsum dolor sit amet</a>, consectetur adipisicing elit. Accusamus inventore architecto eaque quia quae corporis animi quod qui quis reiciendis asperiores iste magnam quasi tenetur delectus, veniam ab nemo quam?</p>
+		<p>Lorem ipsum dolor sit amet, <em>consectetur adipisicing elit</em>. Ut obcaecati mollitia dolorum dolores perferendis magni cum, esse ab quibusdam odio consectetur tempore numquam voluptatibus voluptas vel et hic doloremque accusantium?
+		</p>
+		<div class="if">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/IzH5yqJfcTs?rel=0" frameborder="0" allowfullscreen></iframe>
+		</div>
+	</article>
+	<article>
+		<a name="2"><h2>Раздел 2</h2></a>
+		<p class="anons">Это анонс</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <strong>Atque qui temporibus</strong> dolor harum, totam vel adipisci consequuntur possimus obcaecati eos culpa dignissimos tenetur nemo voluptatem expedita! Illum quia maiores, vero?</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum rerum maxime ea hic, sequi saepe reiciendis corporis! <em>Mollitia facere ullam enim consectetur hic cum quaerat eos</em>, officia! In, eveniet, laboriosam!</p>
+		<img src="http://il.cdn.1001fonts.net/r/o/roboto-condensed-font-6-big.png" alt="Картинка про шрифт">
+	</article>
+	<article name="3">
+		<a name="3"><h2>Раздел 3</h2></a>
+		<p class="anons">Это анонс</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid atque obcaecati eaque, quam voluptas, voluptates iure architecto ex laborum dolor sed provident dicta ad. <strong>Est delectus</strong> sint molestias architecto distinctio!</p>
+		<p><strong>Lorem ipsum dolor sit amet</strong>, consectetur adipisicing <em>elit</em>. Praesentium dolore eos quia eveniet necessitatibus corrupti, tempora nostrum, accusantium dolorum nemo debitis assumenda laborum animi beatae doloremque deleniti facere excepturi facilis.</p>
+		<p><a href="http:/vkbc.ru" target="_blanc">Deserunt temporibus ipsa explicabo</a> in laudantium mollitia id saepe quia magnam laboriosam modi culpa porro perferendis natus ad odio veniam, labore totam nulla! <em>Delectus beatae sequi possimus provident</em>, architecto dicta.</p>
+		<div class="if">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d32012.14810470647!2d10.726964577622573!3d59.90294575688289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e55ec405b67%3A0x10d50d66ed90d75c!2z0JPQsNC80LvQtS3QntGB0LvQviwg0J7RgdC70L4sINCd0L7RgNCy0LXQs9C40Y8!5e0!3m2!1sru!2sru!4v1508366309729" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
+	</article>
+	
+	<footer>
+		Vladimir Zhuravlev &copy; Tinkoff Fintech School 2017
+	</footer>
+
+</section>
 </body>
 </html>

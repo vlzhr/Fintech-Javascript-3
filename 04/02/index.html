@@ -3,9 +3,151 @@
 <head>
     <meta charset="utf-8">
     <title>Задание 2</title>
+    <style>
+		table.f {
+			table-layout: fixed;
+			width: 700px;
+			border: 0px;
+    		border-collapse: collapse;
+    		margin: 0px auto;
+		}
+		.f tbody tr:nth-child(odd) {
+    		background: #C9E4F6;/* фон нечетных строк */
+  		}
+  		.f tbody tr:nth-child(even) {
+    		background: #B4DAF2;/* фон четных строк */
+  		}
+		.f td {
+			white-space: nowrap;
+			box-sizing: border-box;
+			border-width: 0px;
+			padding: 5px;
+		}
+		.f .prois {
+			white-space: pre-wrap; /* css-3 */
+			white-space: -moz-pre-wrap; /* Mozilla, начиная с 1999 года */
+			white-space: -pre-wrap; /* Opera 4-6 */
+			white-space: -o-pre-wrap; /* Opera 7 */
+			word-wrap: break-word; /* Internet Explorer 5.5+ */
+		}
+		.f .name {
+			white-space: nowrap;
+  			overflow: hidden; 
+			text-overflow: ellipsis;
+		}
+		.f thead tr {
+			background: #aaa;
+			font-weight: 600;
+			border-bottom: 1px black solid;
+		}
+		.f tbody tr:hover {
+			background: #ccc;
+		}
+
+		.s {
+
+			margin: 200px auto 100px;
+			border-spacing: 8px;
+		}
+		.s td {
+			background: #ccc;
+			width: 70px;
+			height: 30px;
+			padding: 7px;
+			content: "random";
+		}
+    </style>
 </head>
 <body>
-<h1>Пустая страница, в ней создать 2 таблицы. Первая, таблица продуктов(Название продукта, Происхождение, Белки, Жиры, Углеводы):</h1>
+
+<table class="f">
+	<thead>
+	<tr>
+		<td class="name">Название</td>
+		<td class="prois">Происхождение</td>
+		<td>Белки</td>
+		<td>Жиры</td>
+		<td>Углеводы</td>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td class="name">Вова jsdi hudshiii jsovdjiosdioj</td>
+		<td class="prois">Прага xt[bz djdf dns jivsio sj</td>
+		<td>12</td>
+		<td>11</td>
+		<td>100</td>		
+	</tr>
+	<tr>
+		<td class="name">Вова jsdi hudshiii jsovdjiosdioj</td>
+		<td class="prois">Прага xt[bz djdf dns jivsio sj</td>
+		<td>12</td>
+		<td>11</td>
+		<td>100</td>		
+	</tr>
+	<tr>
+		<td class="name">Вова jsdi hudshiii jsovdjiosdioj</td>
+		<td class="prois">Прага xt[bz djdf dns jivsio sj</td>
+		<td>12</td>
+		<td>11</td>
+		<td>100</td>		
+	</tr>
+	<tr>
+		<td class="name">Вова jsdi hudshiii jsovdjiosdioj</td>
+		<td class="prois">Прага xt[bz djdf dns jivsio sj</td>
+		<td>12</td>
+		<td>11</td>
+		<td>100</td>		
+	</tr>
+	<tr>
+		<td class="name">Вова jsdi hudshiii jsovdjiosdioj</td>
+		<td class="prois">Прага xt[bz djdf dns jivsio sj</td>
+		<td>12</td>
+		<td>11</td>
+		<td>100</td>		
+	</tr>
+	</tbody>
+</table>
+
+<table class="s">
+	
+	<tr>
+		<td>this</td>
+		<td>little</td>
+		<td>piggy</td>
+		<td>went</td>
+		<td>to</td>
+		<td>market</td>
+	</tr>
+	<tr>
+		<td colspan="2">this</td>
+		<td>little</td>
+		<td>piggy</td>
+		<td>went</td>
+		<td>to</td>
+	</tr>
+	<tr>
+		<td colspan="4">this</td>
+		<td rowspan="3">little</td>
+		<td>piggy</td>
+	</tr>
+	<tr>
+		<td rowspan="2">this</td>
+		<td>little</td>
+		<td>piggy</td>
+		<td>went</td>
+		<td>to</td>
+	</tr>
+	<tr>
+		<td>little</td>
+		<td>piggy</td>
+		<td>went</td>
+		<td>to</td>
+	</tr>	
+
+</table>
+
+<!--<h1>Пустая страница, в ней создать 2 таблицы. Первая, таблица продуктов(Название продукта, Происхождение, Белки, Жиры, Углеводы):</h1>
 <ul>
     <li> 5 ячеек в строке равной ширины </li>
     <li> Если контент не вмещается в ячейку, она не раздвигается, в колонке Название продукта контент в одну строку и скрывается с точками, в колонке Происхождение контент становится многострочным. </li>
@@ -16,6 +158,6 @@
 </ul>
 
 <h1> Вторая, как на картинке, отступ между ячейками 8px</h1>
-<image src="https://habrastorage.org/webt/59/e3/06/59e306153cd88184926845.png"></image>
+<image src="https://habrastorage.org/webt/59/e3/06/59e306153cd88184926845.png"></image>-->
 </body>
 </html>

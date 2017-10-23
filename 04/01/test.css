@@ -1,1 +1,18 @@
 a { color: #fff; }
+
+body {
+	margin: 10px;
+}
+
+h1 {
+	font-size: 30px;
+}
+p {
+	font-size: 20px;
+}
+ul {
+	font-size: 17px;
+}
+img {
+	width: 200px;
+}

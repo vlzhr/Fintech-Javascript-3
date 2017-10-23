@@ -3,12 +3,45 @@
 <head>
     <meta charset="utf-8">
     <title>Задание 3</title>
+    <style>
+    	ul>li {
+    		list-style-type: none;
+    	}
+    	ul>li:before {
+			display: block;
+			float: left;
+			margin-left: -30px;
+		    counter-increment: item;
+		    content: "•";
+		    margin-right: 30px;
+		    color: yellow;
+		}
+    	ol>li {
+    		list-style-type: none;
+    	}
+    	ol>li:before {
+			display: block;
+			float: left;
+			margin-left: -30px;
+		    counter-increment: items;
+		    content: counter(items);
+		    color: blue;
+		}
+    </style>
 </head>
 <body>
-<h1>Создать ненумерованный список, и внутри одного элемента - нумерованный список:</h1>
 <ul>
-    <li> У ненумерованного списка `точки` должны быть желтого цвета </li>
-    <li> У нумерованного числа - синего </li>
+	<li>Platonov</li>
+	<li>Fedorov</li>
+	<li>Zharkov</li>
+	<li>Buykina</li>
+	<li><br>
+		<ol>
+			<li>Polina</li>
+			<li>Vladimir</li>
+			<li>Anna and Sergey</li>
+		</ol>
+	</li>
 </ul>
 </body>
 </html>
