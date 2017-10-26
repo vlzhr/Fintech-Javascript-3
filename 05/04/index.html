@@ -22,54 +22,83 @@
 			padding: 27px 18px 14px;
 			font-size: 17px;
   			color: #333333;
-			margin: 0px 0px 24px;
+			margin: 0px;
 			display: block;
 			box-sizing: border-box;
 			border-width: 1px;
 			border-radius: 6px;
 			width: 100%;
+			float: left;
 		}
 		.input:focus {
 			background-color: #eef2f7;
 		}
-		.wrong {
+		.wrong_span {
 			border: solid 1px #d0011b;
 		}
-		.input.wrong:after {
+		.wrong:after {
 			content: url("img/stroke-1-copy-2-fill-2-copy-2-stroke-1-copy-2.png");
 			display: block;
+			float: left;
 			width: 24px;
-			margin-left: -48px;
+			height: 24px;
+			margin: 17px 0px 21px -48px;
+		}
+		.cont {
+			position: relative;
+			width: 100%;
+			float: left;
+			margin: 0px 0px 24px;
 		}
 		.titles {
-		  width: 29px;
+		  position: absolute;
 		  height: 13px;
 		  opacity: 0.6;
 		  font-family: Roboto;
 		  font-size: 13px;
 		  color: #74a3c7;
-		  margin-bottom: -25px;
+		  top: 12px;
 		  display: block;
 		  margin-left: 19px;
 		  box-sizing: border-box;
 		  width: 100%;
 		}
-		.fio {
-			/*display: block;
-			margin-bottom: -14px;*/
+		.choose {
+			width: 100%;
+			float: left;
+		}
+		.h2 {
+  width: 245px;
+  height: 24px;
+  font-family: Roboto;
+  margin: 15px auto 27px;
+  font-size: 21px;
+  font-weight: 300;
+  text-align: center;
+  color: #333333;
+		}
+		.radio_but {
+			  width: 258px;
+  height: 66px;
+  border-radius: 6px;
+  background-color: #ffffff;
+  border: solid 1px #dddfe0;
 		}
 	</style>
 </head>
 <body>
 	<section>
 		<form class="form" action="">
-			<span class="titles">ФИО</span>
-			<input type="text" class="input">
-			<span class="titles">Город проживания</span>
-			<input type="text" class="input wrong">
-			<span class="titles">Мобильный телефон</span>
-			<input type="text" class="input">
-			<input type="text" class="input">
+			<div class="cont"><span class="titles">ФИО</span>
+			<input type="text" class="input"></div>
+			<div class="wrong cont"><span class="titles">Город проживания</span>
+			<input type="text" class="wrong_span input"></div>
+			<div class="cont"><span class="titles">Мобильный телефон</span>
+			<input type="text" class="input"></div>
+			<div class="choose">
+				<h2 class="h2">Выберите это или другое</h2>
+				<label class="radio_but"><input class="radio" type="radio" name="this"> Это</label><label class="radio_but"><input type="radio" class="radio" name="other"> Другое</label>
+			</div>
 		</form>
 	</section>
 </body>
