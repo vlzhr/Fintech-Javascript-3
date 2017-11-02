@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="style.css">
     <!--<link rel="stylesheet/less" type="text/css" href="./main.less" />
-    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js" ></script>-->
+    <script src="less.js" ></script>-->
+    <!--<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js" ></script>-->
+    
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400&amp;subset=cyrillic" rel="stylesheet">
     <!--<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>-->
     <title>Задание 6.1</title>
@@ -21,30 +23,30 @@
         </header>
 
         <nav class="menu">
-            <ul class="menu_cont">
-                <li class="menu_span">
-                    <a class="menu_link" href="">КАРТЫ</a>
+            <ul class="menu__cont">
+                <li class="menu__span">
+                    <a class="menu__link" href="">КАРТЫ</a>
                 </li>
-                <li class="menu_span">
-                    <a class="menu_link" href="">ВКЛАДЫ</a>
+                <li class="menu__span">
+                    <a class="menu__link" href="">ВКЛАДЫ</a>
                 </li>
-                <li class="menu_span">
-                    <a class="menu_link" href="">ПЛАТЕЖИ И ПЕРЕВОДЫ</a>
+                <li class="menu__span">
+                    <a class="menu__link" href="">ПЛАТЕЖИ И ПЕРЕВОДЫ</a>
                 </li>
-                <li class="menu_span">
-                    <a class="menu_link" href="">БОНУСЫ</a>
+                <li class="menu__span">
+                    <a class="menu__link" href="">БОНУСЫ</a>
                 </li>
-                <li class="menu_span">
-                    <a class="menu_link" href="">СТРАХОВАНИЕ</a>
+                <li class="menu__span">
+                    <a class="menu__link" href="">СТРАХОВАНИЕ</a>
                 </li>
-                <li class="menu_span">
-                    <a class="menu_link" href="">О БАНКЕ</a>
+                <li class="menu__span">
+                    <a class="menu__link" href="">О БАНКЕ</a>
                 </li>
             </ul>
         </nav>
 
         <div class="banner">
-            <div class="img_container">
+            <div class="img-container">
             </div>
             <div class="info">
                 <h2>
@@ -53,9 +55,9 @@
                 <p>
                     Выбирайте карту, пользуйтесь удобными сервисами
                 </p>
-                <button>
+                <a href="#form"><button>
                     Оформить заявку
-                </button>
+                </button></a>
             </div>
         </div>
 
@@ -67,31 +69,31 @@
 
         <h2 class="tagh2">Любые категории платежей</h2>
         <p class="tags">
-            <span class="tag"><span class="tag_text">Кафе</span><span class="close"></span></span>
-            <span class="tag"><span class="tag_text">Интернет</span><span class="close"></span></span>
-            <span class="tag"><span class="tag_text">Телефон</span><span class="close"></span></span>
-            <span class="tag"><span class="tag_text">Авто</span><span class="close"></span></span>
-            <span class="tag"><span class="tag_text">ЖКХ</span><span class="close"></span></span>
-            <span class="tag"><span class="tag_text">Одежда и обувь</span><span class="close"></span></span>
-            <span class="tag"><span class="tag_text">Супермаркеты гастрономы универмаги</span><span class="close"></span></span>
-            <span class="new_tag" contenteditable></span>
+            <span class="tag"><span class="tag__text">Кафе</span><span class="close"></span></span>
+            <span class="tag"><span class="tag__text">Интернет</span><span class="close"></span></span>
+            <span class="tag"><span class="tag__text">Телефон</span><span class="close"></span></span>
+            <span class="tag"><span class="tag__text">Авто</span><span class="close"></span></span>
+            <span class="tag"><span class="tag__text">ЖКХ</span><span class="close"></span></span>
+            <span class="tag"><span class="tag__text">Одежда и обувь</span><span class="close"></span></span>
+            <span class="tag"><span class="tag__text">Супермаркеты гастрономы универмаги</span><span class="close"></span></span>
+            <span class="new-tag" contenteditable></span>
         </p>
 
 
-        <form class="form" action="">
-            <h2>Заполните несколько простых полей</h2>
+        <form class="form" action="#">
+            <a name="form"><h2>Заполните несколько простых полей</h2></a>
             <div class="cont"><span class="titles">ФИО</span>
             <input type="text" class="input" placeholder="ФИО"></div>
             <div class="wrong cont"><span class="titles">Город проживания</span>
-            <input type="text" class="wrong_span input" placeholder="Город проживания"></div>
+            <input type="text" class="wrong__span input" placeholder="Город проживания"></div>
             <div class="cont"><span class="titles">Мобильный телефон</span>
             <input type="text" class="input" placeholder="Мобильный телефон"></div>
             <div class="cont"><span class="titles">Электронная почта</span>
             <input type="text" class="input" placeholder="Электронная почта"><div class="email"></div><div class="note">Ваши данные замаскированы в целях безопасности. Для изменения информации с вами свяжется оператор колл-центра.</div></div>
             <div class="choose">
                 <h3 class="h3">Выберите это или другое</h2>
-                <div class="choose_cont">
-                    <label class="radio_but"><input class="radio" checked="" type="radio" name="this"><span class="radio_text">Это</span></label><label class="radio_but"><input type="radio" class="radio" name="this"><span class="radio_text">Другое</span></label>
+                <div class="choose__cont">
+                    <label class="choose__but"><input class="choose__radio" checked="" type="radio" name="this"><span class="choose__text">Это</span></label><label class="choose__but"><input type="radio" class="choose__radio" name="this"><span class="choose__text">Другое</span></label>
                 </div>
             </div>
             <button>Отправить</button>
