@@ -2,17 +2,104 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400&amp;subset=cyrillic" rel="stylesheet">
     <title>Задание 5.4</title>
+    <style>
+		section {
+			max-width: 1080px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 200px;
+		}
+		section {
+			font-family: Roboto;
+		}
+		.form {
+			width: 540px;
+			margin: 0px auto;
+		}
+		.input {
+			padding: 27px 18px 14px;
+			font-size: 17px;
+  			color: #333333;
+			margin: 0px;
+			display: block;
+			box-sizing: border-box;
+			border-width: 1px;
+			border-radius: 6px;
+			width: 100%;
+			float: left;
+		}
+		.input:focus {
+			background-color: #eef2f7;
+		}
+		.wrong_span {
+			border: solid 1px #d0011b;
+		}
+		.wrong:after {
+			content: url("stroke-1-copy-2-fill-2-copy-2-stroke-1-copy-2.png");
+			display: block;
+			float: left;
+			width: 24px;
+			height: 24px;
+			margin: 17px 0px 21px -48px;
+		}
+		.cont {
+			position: relative;
+			width: 100%;
+			float: left;
+			margin: 0px 0px 24px;
+		}
+		.titles {
+		  position: absolute;
+		  height: 13px;
+		  opacity: 0.6;
+		  font-family: Roboto;
+		  font-size: 13px;
+		  color: #74a3c7;
+		  top: 12px;
+		  display: block;
+		  margin-left: 19px;
+		  box-sizing: border-box;
+		  width: 100%;
+		}
+		.choose {
+			width: 100%;
+			float: left;
+		}
+		.h2 {
+  width: 245px;
+  height: 24px;
+  font-family: Roboto;
+  margin: 15px auto 27px;
+  font-size: 21px;
+  font-weight: 300;
+  text-align: center;
+  color: #333333;
+		}
+		.radio_but {
+			  width: 258px;
+  height: 66px;
+  border-radius: 6px;
+  background-color: #ffffff;
+  border: solid 1px #dddfe0;
+		}
+	</style>
 </head>
 <body>
-<h1>Сверстать форму. Pixel-perfect. Select делать не нужно</h1>
-<p>
-    Подробности по ссылке:
-    <a href="https://app.zeplin.io/project/58a307271a9f6d513890adc8/screen/58a3075a4ec334e848d7f333">
-        https://app.zeplin.io/project/58a307271a9f6d513890adc8/screen/58a3075a4ec334e848d7f333
-    </a>, для того чтобы получить доступ, нужно зарегестрироваться на
-    <a href="https://zeplin.io/">zeplin.io</a>, и попросить доступ у Евгения Мамаева.
-</p>
-<img src="./task.png" alt="">
+	<section>
+		<form class="form" action="">
+			<div class="cont"><span class="titles">ФИО</span>
+			<input type="text" class="input"></div>
+			<div class="wrong cont"><span class="titles">Город проживания</span>
+			<input type="text" class="wrong_span input"></div>
+			<div class="cont"><span class="titles">Мобильный телефон</span>
+			<input type="text" class="input"></div>
+			<div class="choose">
+				<h2 class="h2">Выберите это или другое</h2>
+				<label class="radio_but"><input class="radio" type="radio" name="this"> Это</label><label class="radio_but"><input type="radio" class="radio" name="other"> Другое</label>
+			</div>
+		</form>
+	</section>
 </body>
 </html>
