@@ -2,17 +2,218 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400&amp;subset=cyrillic" rel="stylesheet">
     <title>Задание 5.4</title>
+    <style>
+		section {
+			max-width: 1080px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 100px;
+		}
+		section {
+			font-family: Roboto;
+		}
+		.form {
+			display: block;
+			clear: both;
+			width: 540px;
+			max-width: 100%;
+			margin: 0px auto;
+		}
+		.input {
+			padding: 27px 18px 14px;
+			font-size: 17px;
+  			color: #333333;
+			margin: 0px;
+			display: block;
+			box-sizing: border-box;
+			border: 0px;
+			border-radius: 6px;
+			width: 100%;
+			float: left;
+			background-color: #eef2f7;
+		}
+		.input::placeholder {
+			color: rgba(0,0,0,0);
+			font-size: 17px;
+			opacity: 0.6;
+		}
+		.wrong_span {
+			background-color: rgba(0,0,0,0);
+			border: solid 1px #d0011b;
+		}
+		.wrong::after {
+			content: url("stroke-1-copy-2-fill-2-copy-2-stroke-1-copy-2.svg");
+			display: block;
+			float: left;
+			width: 24px;
+			height: 24px;
+			margin: 17px 0px 21px -48px;
+		}
+		.wrong::before {
+			display: block;
+			position: absolute;
+			content: "Для заполнения этого поля не допустимо использовать буквы латинского алфавита";
+			font-size: 13px;
+			margin-top: 77px;
+  			color: #d0021b;
+		}
+		.email {
+			content: url("stroke-1-fill-2-copy-3.svg");
+			display: block;
+			float: left;
+			width: 24px;
+			height: 24px;
+			margin: 17px 0px 21px -48px;
+			cursor: pointer;
+			position: relative;
+		}
+		.note {
+			position: absolute;
+			display: none;
+			font-size: 13px;
+  			line-height: 1.38;
+  			color: #9299a2;
+  			width: 284px;
+  			padding: 16px;
+  			box-sizing: border-box;
+  			border-radius: 6px;
+  			margin-left: 200px;
+  			margin-top: -19px;
+  			background-color: #ffffff;
+  			border: solid 1px #dddfe0;
+		}
+		.email:hover + .note {
+			display: block;
+		}
+		.cont {
+			position: relative;
+			width: 100%;
+			clear: both;
+			float: left;
+			margin: 0px 0px 24px;
+		}
+		.wrong {
+			margin-bottom: 54px;
+		}
+		.titles {
+		  position: absolute;
+		  height: 13px;
+		  opacity: 0.6;
+		  font-family: Roboto;
+		  font-size: 13px;
+		  color: #74a3c7;
+		  top: 12px;
+		  display: block;
+		  padding-left: 19px;
+		  box-sizing: border-box;
+		  width: 100%;
+		}
+		.choose {
+			width: 100%;
+			float: left;
+			margin-bottom: 48px;
+		}
+		.choose_cont {
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+		}
+		.h3 {
+  width: 245px;
+  height: 24px;
+  font-family: Roboto;
+  margin: 15px auto 27px;
+  font-size: 21px;
+  font-weight: 300;
+  text-align: center;
+  color: #333333;
+		}
+		.radio_but {
+			min-width: 200px;
+			  max-width: 258px;
+			  border-radius: 6px;
+			  background-color: #ffffff;
+			  border: solid 1px #dddfe0;
+			  display: flex;
+			  flex-direction: row-reverse;
+			  justify-content: space-between;
+			padding: 18px;
+		}
+		.radio_text {
+			line-height: 30px;
+			color: #74a3c7;
+			vertical-align: middle;
+			font-size: 17px;
+		}
+		.radio {
+			content: url(oval-48-copy.svg);
+			width: 30px;
+			height: 30px;
+		}
+		.radio:checked + .radio_text  {
+			color: #333333;
+		}
+		.radio:checked {
+			content: url(group-15.svg);
+		}
+
+		.form button {
+			display: block;
+			margin: 0px auto 300px;
+		}
+
+
+        .form h2 {
+            margin-bottom: 50px;
+            font-family: Roboto, sans-serif;
+            font-size: 50px;
+            font-weight: 300;
+            width: 100%;
+            text-align: center;
+            color: #333333;
+        }
+
+		.form h2 {
+			margin-bottom: 67px;
+}
+		button {
+			  width: 212px;
+			  height: 62px;
+			  border-radius: 6px;
+			  background-color: #ffdd2d;
+			  font-size: 17px;
+			  line-height: 1.41;
+			  text-align: center;
+			  color: #333333;
+			  border-width: 0px;
+			  cursor: pointer;
+			  margin: 0px;
+		}
+	</style>
 </head>
 <body>
-<h1>Сверстать форму. Pixel-perfect. Select делать не нужно</h1>
-<p>
-    Подробности по ссылке:
-    <a href="https://app.zeplin.io/project/58a307271a9f6d513890adc8/screen/58a3075a4ec334e848d7f333">
-        https://app.zeplin.io/project/58a307271a9f6d513890adc8/screen/58a3075a4ec334e848d7f333
-    </a>, для того чтобы получить доступ, нужно зарегестрироваться на
-    <a href="https://zeplin.io/">zeplin.io</a>, и попросить доступ у Евгения Мамаева.
-</p>
-<img src="./task.png" alt="">
+	<section>
+        <form class="form" action="">
+            <h2>Заполните несколько простых полей</h2>
+            <div class="cont"><span class="titles">ФИО</span>
+            <input type="text" class="input" placeholder="ФИО"></div>
+            <div class="wrong cont"><span class="titles">Город проживания</span>
+            <input type="text" class="wrong_span input" placeholder="Город проживания"></div>
+            <div class="cont"><span class="titles">Мобильный телефон</span>
+            <input type="text" class="input" placeholder="Мобильный телефон"></div>
+            <div class="cont"><span class="titles">Электронная почта</span>
+            <input type="text" class="input" placeholder="Электронная почта"><div class="email"></div><div class="note">Ваши данные замаскированы в целях безопасности. Для изменения информации с вами свяжется оператор колл-центра.</div></div>
+            <div class="choose">
+                <h3 class="h3">Выберите это или другое</h2>
+                <div class="choose_cont">
+                    <label class="radio_but"><input class="radio" checked="" type="radio" name="this"><span class="radio_text">Это</span></label><label class="radio_but"><input type="radio" class="radio" name="this"><span class="radio_text">Другое</span></label>
+                </div>
+            </div>
+            <button>Отправить</button>
+
+        </form>
+	</section>
 </body>
 </html>
